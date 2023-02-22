@@ -52,6 +52,10 @@ The HCPC (***Hierarchical Clustering on Principal Components***) approach allows
 
 It allows us to obtain a more stable clustering as we reduce the dimension of the data into some variables containing most of the information about the data.
 The following code displays the PCA graph of variables and the three graphs shown below.
+```R
+> res.pca <- PCA(rock, scale.unit = TRUE,ncp = 5, graph = TRUE)
+> res.hcpc <- HCPC(res.pca, graph = TRUE)
+```
 
 ![image](https://user-images.githubusercontent.com/107730108/220688957-cf95dc5a-afbe-45b7-bd0a-7fe155dad7c0.png)
 ![image](https://user-images.githubusercontent.com/107730108/220689316-2e9c15dc-c701-4908-a975-90085aca8016.png)
